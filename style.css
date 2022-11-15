@@ -143,12 +143,12 @@ h3 {
 }
 
 .header-container {
-    width: min(1300px, 95%);
+    width: min(1000px, 90%);
     margin: auto;
 }
 
 .main-container {
-    width: min(1300px, 95%);
+    width: min(1000px, 90%);
     margin: auto;
 }
 
@@ -395,6 +395,14 @@ dialog>*+*,
 
 
 @media (max-width: 976px) {
+    .header-container {
+        width: min(1000px, 95%);
+    }
+
+    .main-container {
+        width: min(1000px, 95%);
+    }
+
     .flex {
         flex-direction: column;
     }
