@@ -148,7 +148,7 @@ h3 {
 }
 
 .main-container {
-    width: min(1101px, 85%);
+    width: min(1300px, 95%);
     margin: auto;
 }
 
@@ -213,7 +213,7 @@ main {
 }
 
 .text {
-    flex-basis: 39%;
+    flex-basis: 60%;
     margin-block-start: 8rem;
 }
 
@@ -390,7 +390,11 @@ dialog>*+*,
 /* Mobile Responsiveness */
 /* -------------- */
 
-@media (max-width: 1300px) {
+@media (max-width: 1300px) {}
+
+
+
+@media (max-width: 976px) {
     .flex {
         flex-direction: column;
     }
@@ -413,11 +417,7 @@ dialog>*+*,
     dialog.main-container {
         padding: 2rem 3.5rem 3rem 3.5rem;
     }
-}
 
-
-
-@media (max-width: 976px) {
     body {
         padding-block: 2.8rem;
     }
