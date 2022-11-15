@@ -20,7 +20,8 @@
     <main class="main-container flex">
         <div class="text">
             <h1>Crypto <br> made social</h1>
-            <p>Get instant access to the crypto market, discover new communities and discuss opportunities with
+            <p>Get instant access to the crypto market.
+                <br /> Discover new communities and discuss <br />opportunities with
                 friends.
             </p>
             <button class="btn btn-special join-waitlist">Join waitlist</button>
@@ -305,26 +306,26 @@
         </div>
     </dialog>
     <script>
-      const form = document.querySelector('form')
-      const successElement = document.querySelector('#success');
-      const errorElement = document.querySelector('#error');
-      form.addEventListener('submit', event => {
-        event.preventDefault();
+        const form = document.querySelector('form')
+        const successElement = document.querySelector('#success');
+        const errorElement = document.querySelector('#error');
+        form.addEventListener('submit', event => {
+            event.preventDefault();
 
-        const myForm = event.target;
-        const formData = new FormData(myForm);
+            const myForm = event.target;
+            const formData = new FormData(myForm);
 
-        successElement.classList.add('dnone');
-        errorElement.classList.add('dnone');
+            successElement.classList.add('dnone');
+            errorElement.classList.add('dnone');
 
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString(),
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString(),
+            })
+                .then(() => successElement.classList.remove('dnone'))
+                .catch(() => errorElement.classList.remove('dnone'));
         })
-          .then(() => successElement.classList.remove('dnone'))
-          .catch(() => errorElement.classList.remove('dnone'));
-      })
     </script>
 </body>
 

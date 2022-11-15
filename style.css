@@ -143,7 +143,7 @@ h3 {
 }
 
 .header-container {
-    width: min(1101px, 85%);
+    width: min(1300px, 95%);
     margin: auto;
 }
 
@@ -213,7 +213,7 @@ main {
 }
 
 .text {
-    flex-basis: 60%;
+    flex-basis: 50%;
     margin-block-start: 8rem;
 }
 
@@ -424,6 +424,7 @@ dialog>*+*,
 
     .logo {
         width: 10.2rem;
+        scale: 1.5;
     }
 
     .text {
@@ -431,17 +432,17 @@ dialog>*+*,
     }
 
     .text h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         line-height: 5.6rem;
         margin-block-end: 1.6rem;
         letter-spacing: -2px;
     }
 
     .text p {
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-weight: var(--fw300);
         margin-block-end: 3.2rem;
-        line-height: 2.4rem;
+        line-height: 2.5rem;
     }
 
     .main-container {
